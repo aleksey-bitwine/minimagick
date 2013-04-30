@@ -4,7 +4,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "mini_magick/version"
 
 Gem::Specification.new do |s|
-  s.name        = "mini_magick"
+  s.name        = "mini_magick_mod"
   s.version     = MiniMagick::VERSION
   s.platform    = Gem::Platform::RUBY
   s.summary     = "Manipulate images with minimal use of memory via ImageMagick / GraphicsMagick"
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.authors     = ["Corey Johnson", "Hampton Catlin", "Peter Kieltyka"]
   s.email       = ["probablycorey@gmail.com", "hcatlin@gmail.com", "peter@nulayer.com"]
-  s.homepage    = "https://github.com/minimagick/minimagick"
+  s.homepage    = "https://github.com/aleksey-alt/minimagick"
 
   s.files        = Dir['README.rdoc', 'VERSION', 'MIT-LICENSE', 'Rakefile', 'lib/**/*']
   s.test_files   = Dir['test/**/*']
