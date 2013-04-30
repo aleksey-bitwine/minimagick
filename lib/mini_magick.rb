@@ -362,10 +362,10 @@ module MiniMagick
     #   end
     #
     # @yieldparam command [CommandBuilder]
-    def combine_options(tool = "mogrify", &block)
+    def combine_options(tool = "mogrify", modifiers = {}, &block)
       c = CommandBuilder.new(tool)
 
-      c << @path if tool.to_s == "convert"
+      c << @path if tool.to_s == "convert" && !modifiers[:skip_input]
       block.call(c)
       c << @path
       run(c)
